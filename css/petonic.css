@@ -1094,6 +1094,7 @@ section .description {
 #section_1 img.dog{width:34rem}
 }
 @media( max-width: 768px ) {
+#section_1 #envaseJeringa{display: none;}	
 #section_1{background-size:20rem;background-position:bottom}
 #section_1 .box_one{top:2rem;text-align:center;background:transparent;box-shadow:none}
 #section_1 .title{font-size:2rem ;line-height: 2rem;}
