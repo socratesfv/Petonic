@@ -458,6 +458,12 @@ section .description {
     max-width: 20rem
 }
 
+@media(max-width: 768px){
+    #navbar-principal .navbar-brand img {
+    width: 200px;
+}
+}
+
 #navbar-principal .nav-item a.nav-link {
     color: #fff;
     font-family: 'HelveticaNeueLTStd-Bd';
@@ -1083,7 +1089,7 @@ section .description {
 #section_1{margin-top:4rem;height:40rem;overflow:hidden}
 #content-huesos{width:100%;height:180%;top:-10rem;position:absolute;z-index:99}
 #section_1 img.flecha{width:43rem;position:relative;top:1.2rem;left:-5rem;z-index:1040}
-#section_1 img.dog{width:38rem;position:relative;top:1.2rem;left:-5rem;z-index:1040}
+#section_1 img.dog{width:80%;position:relative;top:1.2rem;left:-5rem;z-index:1040}
 #section_1 .title{color:#EE009D;font-family:'HelveticaNeueLTStd-Bd';font-size:3rem;line-height:3rem}
 #section_1 .sub_title{color:#00b497;font-family:'HelveticaNeueLTStd-Bd';font-size:1.6rem}
 #section_1 .description{color:#000;font-family:'HelveticaNeueLTStd-Lt';font-size:.9rem;text-align:left}
@@ -1120,6 +1126,22 @@ section .description {
 #section_1 .hueso.n9{right:-1rem}
 #section_1 .hueso.n10{right:-3rem}
 #section_1 img.dog{width:22rem;margin-left: 25%;margin-top: 1rem;top:0;}
+}
+/*POWERED BY JOB*/
+@media(max-width: 768px){
+
+    
+    .harabara .copy{
+        top: 10px;
+    }
+    #section_1 .bounceIn{
+        display: inline;
+        margin-top: 10px;
+    }
+    #section_1 .jackInTheBox{
+        display: inline;
+    }
+
 }
 #section_2{padding:2.5rem 1.5rem;padding-top:7rem;position:relative;z-index:999;background:#dbb9d8}
 #section_2 .col-3{margin-right:8rem}
