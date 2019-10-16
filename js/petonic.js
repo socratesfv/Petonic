@@ -2,16 +2,17 @@ $(function () {
     $('.hideMenu').on('click',function(){
         $('#navbarSupportedContent').collapse('hide');$('#products-list-navbar').slideUp();
     });
-    if(!isMobile.matches){//NOT MOBIL
-        $('#navbar-principal').find('.nav-link.product-list').on('mouseover', function () {
+    /*if(!isMobile.matches){//NOT MOBIL
+        $('#navbar-principal').find('.nav-link').on('click', function () {
+            $('#navbar-principal').find('.nav-link').removeClass('active');
             $(this).addClass('active');
             $('#products-list-navbar').slideDown();
         });
         $('#products-list-navbar').on('mouseleave', function () {
-            $('#navbar-principal').find('.nav-link.product-list').removeClass('active');
+            $('#navbar-principal').find('.nav-link').removeClass('active');
             $('#products-list-navbar').slideUp();
         });
-    }
+    }*/
 
     //CLICK COLLAPSE BUTTONS
     $('.show-more-click').on('click', function (e) {

@@ -249,6 +249,22 @@ p {
     color: #E72F88
 }
 
+.btn-lila {
+    font-size: .8rem;
+    border: 1px solid #dbb9d8;
+    background: transparent;
+    padding: .4rem 1.4rem;
+    color: #dbb9d8;
+    font-weight: 700
+}
+
+.btn-lila:hover {
+    font-size: .8rem;
+    background: #dbb9d8;
+    color: #fff;
+    font-weight: 700
+}
+
 .primary-color {
     color: #00b497!important
 }
@@ -394,8 +410,8 @@ a.btn.btn-close {
     text-align: center;
     border-radius: 4px;
     position: fixed;
-    bottom: 30px;
-    right: 30px;
+    bottom: 85px;
+    right: 16px;
     transition: background-color .3s, opacity .5s, visibility .5s;
     opacity: 0;
     visibility: hidden;
@@ -458,8 +474,9 @@ section .description {
 }
 
 #navbar-principal .social-item a img {
-    width: 2.3rem;
-    margin-right: 7px
+    width: 1.8rem;
+    margin-left: 12px;
+    margin-top: 4px
 }
 
 #products-list-navbar {
@@ -531,7 +548,7 @@ section .description {
 
 #section_1 {
     margin-top: 4rem;
-    height: 45rem;
+    height: 41rem;
     overflow: hidden
 }
 
@@ -668,9 +685,6 @@ section .description {
 }
 
 @media( max-width: 1600px) {
-    #section_1 {
-        height: 48rem
-    }
     #section_1 img.dog {
         width: 34rem
     }
@@ -747,8 +761,6 @@ section .description {
 }
 	
 #section_11 .contain{
-	
-	margin-bottom: 5%;
 	background-position: center;
 	background-image: url(../img/flujograma.png);
 	background-size: 100% auto;
@@ -1062,14 +1074,15 @@ section .description {
 #products-list-navbar{ display: block !important}    
 #products-list-navbar > .card.card-body{max-height:initial;padding:1rem}
 #products-list-navbar{ position: initial; /*margin-left: -16px; width: 110%;*/ box-shadow: inset 0px 3px 5px #18b5c1;}
-#navbar-principal .nav-item a.nav-link {margin-left: 0;}
+#navbar-principal .nav-item a.nav-link {margin: 0; padding-right: .8rem; padding-left: .8rem;}
 /*#navbar-principal li.nav-item {border-bottom: 2px dashed #3382a9;}*/
 #navbar-principal li.nav-item:nth-child(4) {border-bottom: 0;}
 /*#navbar-principal button.navbar-toggler{ position: absolute; left: 70%;top: .8rem; }*/
 #navbar-principal .navbar-nav{text-align:center}
 }
-#section_1{margin-top:4rem;height:45rem;overflow:hidden}
+#section_1{margin-top:4rem;height:40rem;overflow:hidden}
 #content-huesos{width:100%;height:180%;top:-10rem;position:absolute;z-index:99}
+#section_1 img.flecha{width:43rem;position:relative;top:1.2rem;left:-5rem;z-index:1040}
 #section_1 img.dog{width:38rem;position:relative;top:1.2rem;left:-5rem;z-index:1040}
 #section_1 .title{color:#EE009D;font-family:'HelveticaNeueLTStd-Bd';font-size:3rem;line-height:3rem}
 #section_1 .sub_title{color:#00b497;font-family:'HelveticaNeueLTStd-Bd';font-size:1.6rem}
@@ -1090,7 +1103,7 @@ section .description {
 #section_1 .hueso.n10{width:25%;right:-21rem;top:2rem;transform:rotate(-119deg)}
 #section_1 .hueso.n11{width:25%;right:-13rem;top:-22rem;transform:rotate(-195deg)}
 @media( max-width: 1600px ) {
-#section_1{height:48rem}
+/*#section_1{height:48rem}*/
 #section_1 img.dog{width:34rem}
 }
 @media( max-width: 768px ) {
@@ -1414,4 +1427,68 @@ section .description {
         padding-bottom: 2rem;
         padding-left: 1.5rem;
     }
+}
+
+
+#tabla-modal .btn-close {
+    width: 30px;
+    height: 30px;
+    background-color: #545454;
+    color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    padding-bottom: 6px;
+}
+
+/*Captcha*/
+button.captchaButTry{
+    border:0;
+    background: none;
+    background-image: url("/uploads/refresh.gif");
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    cursor: pointer;
+}
+.captchaButTry span.text{
+    padding-left: 20px;
+}
+.captchaShuffleButton button {
+    color: #000000;
+    font-size: .9em;
+}
+
+.captchaShuffleButton button :hover{
+    text-decoration: underline;
+}
+
+
+ul.errors{
+    color: red; padding-top: 3px; 
+}
+
+ul, li {
+    line-height: normal;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+ul.errors li.ui-corner-all{
+    color: red !important;
+    line-height: normal;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#captcha_valida_contacto-input{width: 180px; vertical-align: bottom; padding: 5px;margin: 15px 0 0 10px }
+#captcha_valida_contacto-input-label {margin: 5px 0}
+#captcha_valida_contacto-element img{float:left; margin-right: 30px;}
+section .asunto label{margin: 0 15px; width: auto}
+
+
+button.disabled {
+    cursor: not-allowed;
+    background-color: #c6c6c6;
+    color: #fff;
 }
